@@ -8,7 +8,7 @@ struct computer {
 };
 
 int main(){
-    fstream f("server.i5", ios::in);
+    fstream f("server.in", ios::in);
     fstream fout("server.out", ios::out);
 
     int serverCount;//datoru skaits tīklā
@@ -19,7 +19,7 @@ int main(){
     int* queue = new int[serverCount];//queue that will hold leaf nodes
 
     f>>input1>>input2;
-    
+
     while(input1&&input2){//while input not = to 0 0, do loop
         servers[input1].count++;
         servers[input2].count++;
