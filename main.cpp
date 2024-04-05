@@ -51,13 +51,11 @@ int main(){
     }
     if(queueEndNext<2){//center found
         if(queueEndNext){// if 1
-            //fout
             fout<<distance<<endl<<queue[0];
             notFound=false;
             break;
         }
         else{// if 0
-            //fout
             fout<<distance<<endl<<queue[0]<<" "<<queue[1];
             notFound=false;
             break;
@@ -66,4 +64,7 @@ int main(){
     queueEnd=queueEndNext;
     queueEndNext=0;
     }
+    delete[] queue;
+    delete[] servers;
+    return 0;
 }
